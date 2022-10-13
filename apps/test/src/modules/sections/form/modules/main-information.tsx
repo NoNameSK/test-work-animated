@@ -17,13 +17,10 @@ export const MainInformation: FC = () => {
         <InputControl label="Пробег" />
         <InputControl label="Техосмотр" />
         <InputControl label="Желаемая цена" />
-        <Button size={EButtonSize.Large} className="lg:flex lg:col-span-3">
+        <Button size={EButtonSize.Large} className="col-span-3">
           Добавить фото
         </Button>
       </div>
-      <Button size={EButtonSize.Large} className="lg:hidden">
-        Добавить фото
-      </Button>
     </div>
   );
 };
