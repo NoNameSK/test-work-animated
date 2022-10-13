@@ -2,7 +2,8 @@ import React, { FC } from 'react';
 
 import { Logo } from '@test-work/ui-kit';
 
-import { menuItems } from '../../data/menu-items';
+import { menuItems } from '../../../data/menu-items';
+
 import { Russian } from '../../svgs/language/russian';
 import { Facebook } from '../../../../footer/svgs/social/facebook';
 import { Vk } from '../../../../footer/svgs/social/vk';

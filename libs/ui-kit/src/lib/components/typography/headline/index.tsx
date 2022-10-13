@@ -10,6 +10,7 @@ type THeadlineProps = ComponentPropsWithoutRef<'h1'>;
 
 interface IComponentProps<Level extends UHeadlineLevel> extends THeadlineProps {
   level: Level;
+  color?: string;
   isNormal?: boolean;
   isCenter?: boolean;
   children: ReactNode;

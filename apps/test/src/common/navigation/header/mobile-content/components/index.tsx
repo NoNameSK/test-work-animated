@@ -4,7 +4,7 @@ import { FadeIn, Phone } from '@test-work/ui-kit';
 
 export const MobileContent: FC = () => {
   return (
-    <div className="px-[17px] py-[12px] flex flex-col gap-[10px]">
+    <div className="px-[17px] py-[12px] flex flex-col gap-[10px] lg:hidden">
       <FadeIn delay={0.8}>
         <div className="font-roboto font-bold text-white text-[14px] leading-[16px]">
           Покупка авто по одному звонку!

@@ -14,7 +14,7 @@ export function App() {
       <ParallaxProvider>
         <Header />
 
-        <main className="px-5">
+        <main className="px-5 lg:pl-[75px]">
           <Form />
 
           <UsefulData />

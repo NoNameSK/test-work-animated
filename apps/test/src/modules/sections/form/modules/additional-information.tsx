@@ -12,7 +12,7 @@ import {
 
 export const AdditionalInformation: FC = () => {
   return (
-    <div className="flex flex-col gap-[20px] mt-[30px]">
+    <div className="flex flex-col gap-[20px] mt-[30px] lg:max-w-[40%] ">
       <Headline level={1} isNormal style={{ textAlign: 'center' }}>
         Другие данные
       </Headline>

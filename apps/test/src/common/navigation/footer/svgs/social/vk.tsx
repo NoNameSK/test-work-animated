@@ -1,6 +1,8 @@
 import { FC } from 'react';
 
-export const Vk: FC = () => (
+import { ISVGProps } from '@test-work/ui-kit';
+
+export const Vk: FC<ISVGProps> = ({ ...props }) => (
   <svg
     width="23"
     height="23"
@@ -8,6 +10,7 @@ export const Vk: FC = () => (
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
     href="http://www.w3.org/1999/xlink"
+    {...props}
   >
     <path d="M0.857056 0H17.9999V17H0.857056V0Z" fill="url(#pattern0)" />
     <defs>

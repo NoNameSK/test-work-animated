@@ -10,7 +10,7 @@ export const Tertiary: FC<ITypographyProps> = ({
   <p
     className={`font-arimo text-[12px] leading-[14px] ${
       isNormal ? 'font-normal' : 'font-bold'
-    } ${color ? `text-[${color}]` : 'text-text'} ${
+    } ${color ? `text-${color}` : 'text-text'} ${
       isCenter ? 'text-center' : ''
     }`}
     {...props}

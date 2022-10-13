@@ -3,11 +3,11 @@ import { FC } from 'react';
 
 export const MainInformation: FC = () => {
   return (
-    <div className="flex flex-col gap-[20px]">
+    <div className="flex flex-col gap-[20px] lg:max-w-[60%] lg:gap-[32px]">
       <Headline level={1} isNormal style={{ textAlign: 'center' }}>
         Данные автомобиля
       </Headline>
-      <div className="grid grid-cols-3 gap-6">
+      <div className="grid grid-cols-3 gap-6 lg:grid-cols-4 lg:gap-row-[30px] lg:gap-col-[10px]">
         <InputControl label="Марка" />
         <InputControl label="Модель" />
         <InputControl label="Мотор" />
@@ -17,8 +17,13 @@ export const MainInformation: FC = () => {
         <InputControl label="Пробег" />
         <InputControl label="Техосмотр" />
         <InputControl label="Желаемая цена" />
+        <Button size={EButtonSize.Large} className="lg:flex lg:col-span-3">
+          Добавить фото
+        </Button>
       </div>
-      <Button size={EButtonSize.Large}>Добавить фото</Button>
+      <Button size={EButtonSize.Large} className="lg:hidden">
+        Добавить фото
+      </Button>
     </div>
   );
 };
