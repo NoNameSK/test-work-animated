@@ -22,7 +22,7 @@ export const About: FC = () => {
         </FadeIn>
 
         <FadeIn delay={1}>
-          <Headline level={2}>
+          <Headline level={1}>
             Мы действуем на рынке автомобилей уже много лет и знаем как оформить
             сделку быстро и без проблем.
           </Headline>
@@ -45,7 +45,7 @@ export const About: FC = () => {
             <FadeIn delay={1 + index / 2} key={item.text} className="z-10">
               <div className="flex flex-col gap-[10px] items-center text-center z-10">
                 {item.svg}
-                <Headline level={3} isCenter>
+                <Headline level={1} isCenter>
                   {item.text}
                 </Headline>
               </div>

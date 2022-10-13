@@ -9,7 +9,7 @@ export const SecondaryCard: FC<ICardProps> = ({ svg, text, ...props }) => (
   >
     <div className="flex flex-col gap-5 items-center py-5 px-6">
       {svg}
-      <Headline level={4} isCenter>
+      <Headline level={1} isCenter>
         {text}
       </Headline>
     </div>

@@ -8,7 +8,7 @@ export const Third: FC<ITypographyProps> = ({
   ...props
 }) => (
   <h3
-    className={`text-[14x] leading-[16px] text-arimo text-text ${
+    className={`text-[24px] leading-[28px] text-arimo text-text ${
       isNormal ? 'font-normal' : 'font-bold'
     } ${color ? `text-[${color}]` : ''} ${isCenter ? 'text-center' : ''}`}
     {...props}

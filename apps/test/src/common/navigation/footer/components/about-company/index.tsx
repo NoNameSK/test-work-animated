@@ -4,7 +4,7 @@ import { Headline } from '@test-work/ui-kit';
 export const AboutCompany: FC = () => {
   return (
     <div className="mt-[20px] flex flex-col justify-center items-center">
-      <Headline level={2} color={'white'}>
+      <Headline level={1} color={'white'}>
         Company name
       </Headline>
 

@@ -13,7 +13,7 @@ import {
 export const AdditionalInformation: FC = () => {
   return (
     <div className="flex flex-col gap-[20px] mt-[30px]">
-      <Headline level={2} isNormal style={{ textAlign: 'center' }}>
+      <Headline level={1} isNormal style={{ textAlign: 'center' }}>
         Другие данные
       </Headline>
       <div className="grid grid-cols-2 gap-6">

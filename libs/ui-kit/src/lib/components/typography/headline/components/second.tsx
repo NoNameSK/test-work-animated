@@ -8,11 +8,9 @@ export const Second: FC<ITypographyProps> = ({
   ...props
 }) => (
   <h2
-    className={`text-[18px] leading-[21px] text-arimo ${
+    className={`text-[14x] leading-[16px] text-arimo text-text ${
       isNormal ? 'font-normal' : 'font-bold'
-    } ${color ? `text-${color}` : 'text-text'} ${
-      isCenter ? 'text-center' : ''
-    }`}
+    } ${color ? `text-[${color}]` : ''} ${isCenter ? 'text-center' : ''}`}
     {...props}
   />
 );

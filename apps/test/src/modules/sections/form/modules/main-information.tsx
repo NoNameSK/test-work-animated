@@ -4,7 +4,7 @@ import { FC } from 'react';
 export const MainInformation: FC = () => {
   return (
     <div className="flex flex-col gap-[20px]">
-      <Headline level={2} isNormal style={{ textAlign: 'center' }}>
+      <Headline level={1} isNormal style={{ textAlign: 'center' }}>
         Данные автомобиля
       </Headline>
       <div className="grid grid-cols-3 gap-6">

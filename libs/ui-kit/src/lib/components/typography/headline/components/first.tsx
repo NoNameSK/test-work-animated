@@ -1,24 +1,18 @@
 import { FC } from 'react';
-import styled from 'styled-components';
+import { ITypographyProps } from '../../typography-props';
 
-const Wrapper = styled.h1`
-  font-weight: 400;
-  font-size: 44px;
-  line-height: 108%;
-
-  @media screen and (min-width: ${({ theme }) => theme.breakpoints.md}) {
-    font-size: 64px;
-    line-height: 104%;
-  }
-
-  @media screen and (min-width: ${({ theme }) => theme.breakpoints.lg}) {
-    font-size: 74px;
-    line-height: 104%;
-  }
-
-  @media screen and (min-width: ${({ theme }) => theme.breakpoints.xl}) {
-    font-size: 100px;
-  }
-`;
-
-export const First: FC = (props) => <Wrapper {...props} />;
+export const First: FC<ITypographyProps> = ({
+  isNormal,
+  color,
+  isCenter,
+  ...props
+}) => (
+  <h1
+    className={`text-[18px] leading-[21px] text-arimo ${
+      isNormal ? 'font-normal' : 'font-bold'
+    } ${color ? `text-${color}` : 'text-text'} ${
+      isCenter ? 'text-center' : ''
+    }`}
+    {...props}
+  />
+);

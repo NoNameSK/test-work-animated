@@ -8,7 +8,7 @@ import { Mail } from '../../svgs/mail';
 export const Contacts: FC = () => {
   return (
     <div className="mt-[30px] flex flex-col justify-center items-center">
-      <Headline level={2} color={'white'}>
+      <Headline level={1} color={'white'}>
         Свяжись с нами
       </Headline>
 

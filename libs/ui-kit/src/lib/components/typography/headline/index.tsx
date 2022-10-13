@@ -3,9 +3,8 @@ import { ComponentPropsWithoutRef, ReactNode } from 'react';
 import { First } from './components/first';
 import { Second } from './components/second';
 import { Third } from './components/third';
-import { Fourth } from './components/fourth';
 
-type UHeadlineLevel = 1 | 2 | 3 | 4;
+type UHeadlineLevel = 1 | 2 | 3;
 
 type THeadlineProps = ComponentPropsWithoutRef<'h1'>;
 
@@ -29,9 +28,6 @@ export const Headline = <Level extends UHeadlineLevel>({
 
     case 3:
       return <Third {...props} />;
-
-    case 4:
-      return <Fourth {...props} />;
 
     default:
       throw new Error('"level" prop must be a number in range [1 .. 2]');
