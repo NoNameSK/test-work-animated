@@ -1,13 +1,28 @@
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-import styles from './app.module.css';
-import NxWelcome from './nx-welcome';
+import { Header } from '../common/navigation/header';
+
+import { Form } from '../modules/sections/form/components';
+import { UsefulData } from '../modules/sections/useful-data/components';
+import { About } from '../modules/sections/about/components';
+import { Company } from '../modules/sections/company/components';
+import { Footer } from '../common/navigation/footer';
 
 export function App() {
   return (
-    <>
-      <NxWelcome title="test" />
-      <div />
-    </>
+    <body className="overflow-x-hidden">
+      <Header />
+
+      <main className="px-5">
+        <Form />
+
+        <UsefulData />
+
+        <About />
+
+        <Company />
+      </main>
+
+      <Footer />
+    </body>
   );
 }
 
