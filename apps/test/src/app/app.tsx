@@ -6,22 +6,26 @@ import { About } from '../modules/sections/about/components';
 import { Company } from '../modules/sections/company/components';
 import { Footer } from '../common/navigation/footer';
 
+import { ParallaxProvider } from 'react-scroll-parallax';
+
 export function App() {
   return (
     <body className="overflow-x-hidden">
-      <Header />
+      <ParallaxProvider>
+        <Header />
 
-      <main className="px-5">
-        <Form />
+        <main className="px-5">
+          <Form />
 
-        <UsefulData />
+          <UsefulData />
 
-        <About />
+          <About />
 
-        <Company />
-      </main>
+          <Company />
+        </main>
 
-      <Footer />
+        <Footer />
+      </ParallaxProvider>
     </body>
   );
 }

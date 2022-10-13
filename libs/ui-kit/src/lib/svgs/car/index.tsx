@@ -1,15 +1,11 @@
 import { FC } from 'react';
 
-interface IComponentProps {
-  color?: string;
-}
-
-export const Car: FC<IComponentProps> = ({ color }) => (
+export const Car: FC = () => (
   <svg
     width="69"
     height="69"
     viewBox="0 0 69 69"
-    fill={color ? color : 'white'}
+    fill="none"
     xmlns="http://www.w3.org/2000/svg"
     href="http://www.w3.org/1999/xlink"
   >

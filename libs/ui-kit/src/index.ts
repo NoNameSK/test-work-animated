@@ -4,3 +4,5 @@ export * from './lib/components/control';
 export * from './lib/components/cards';
 
 export * from './lib/svgs';
+
+export * from './lib/motion/fade-in';
