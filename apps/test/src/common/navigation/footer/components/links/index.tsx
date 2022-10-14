@@ -3,7 +3,7 @@ import { Headline } from '@test-work/ui-kit';
 
 export const Links: FC = () => {
   return (
-    <div className="mt-[20px] flex flex-col justify-center items-center">
+    <div className="mt-[20px] flex flex-col justify-center items-center lg:mt-0 lg:justify-start">
       <Headline level={1} color={'white'}>
         Полезные ссылки
       </Headline>

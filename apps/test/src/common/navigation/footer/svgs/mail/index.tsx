@@ -2,12 +2,14 @@ import { FC } from 'react';
 
 interface IComponentProps {
   color?: string;
+  width?: string;
+  height?: string;
 }
 
-export const Mail: FC<IComponentProps> = ({ color }) => (
+export const Mail: FC<IComponentProps> = ({ width, height, color }) => (
   <svg
-    width="23"
-    height="17"
+    width={`${width ? `${width}` : '23'}`}
+    height={`${height ? `${height}` : '17'}`}
     viewBox="0 0 23 17"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"

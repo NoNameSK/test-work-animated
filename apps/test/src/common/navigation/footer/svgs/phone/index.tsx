@@ -2,12 +2,13 @@ import { FC } from 'react';
 
 interface IComponentProps {
   color?: string;
+  size?: string;
 }
 
-export const Phone: FC<IComponentProps> = ({ color }) => (
+export const Phone: FC<IComponentProps> = ({ color, size }) => (
   <svg
-    width="19"
-    height="20"
+    width={`${size ? `${size}` : '19'}`}
+    height={`${size ? `${size}` : '20'}`}
     viewBox="0 0 19 20"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
