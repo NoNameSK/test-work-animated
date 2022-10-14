@@ -17,7 +17,7 @@ export const NavigationMenuBurger: FC<IComponentProps> = ({ isOpened }) => {
     <div
       className={
         isOpened
-          ? 'right-[0px] font-epilogue flex flex-col gap-[54px] top-0 animate-openMenuX animate-openMenuY w-[372px] h-screen absolute  bg-[#072446] pl-[34px] pt-[27px] h-openMenuY z-10'
+          ? 'right-[0px] font-epilogue flex flex-col gap-[54px] top-0 animate-openMenuX animate-openMenuY w-[372px] h-screen absolute  bg-[#072446] pl-[34px] pt-[27px] h-openMenuY z-40'
           : 'animate-closeMenuX animate-closeMenuY top-0 right-[-414px] flex w-screen absolute flex-col gap-[54px] bg-[#072446] pl-[34px] pt-[27px] h-closeMenuY hidden'
       }
     >

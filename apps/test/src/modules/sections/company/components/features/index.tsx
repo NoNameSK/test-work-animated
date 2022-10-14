@@ -10,7 +10,7 @@ export const Features: FC = () => {
       {features.map((feature, index) => (
         <FadeIn delay={0.2 + index}>
           <li className="mt-[30px] flex gap-[10px] items-center before:h-[22px] before:content-success lg:gap-[18px] lg:max-w-[331px] lg:mt-0">
-            <FadeIn delay={0.5 + index}>
+            <FadeIn delay={0.3 + index}>
               <Paragraph paragraphType={EParagraphVariant.Additional}>
                 {feature}
               </Paragraph>

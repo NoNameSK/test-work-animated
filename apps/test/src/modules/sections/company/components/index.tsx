@@ -37,7 +37,7 @@ export const Company: FC = () => {
         <Parallax speed={-3}>
           <div className="flex gap-5 lg:mt-12 lg:gap-[41px]">
             {companyItems.map((item, index) => (
-              <FadeIn delay={1.4 + index / 2} key={index}>
+              <FadeIn delay={1 + index / 2} key={index}>
                 <div className="shadow-[0_4px_4px_#E5E5E5] w-[111px] h-[111px] rounder-[10px]">
                   <div className="flex flex-col gap-5 items-center py-5 px-6">
                     {item.svg}
