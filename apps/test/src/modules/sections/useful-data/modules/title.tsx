@@ -18,14 +18,14 @@ export const Title: FC = () => {
         </div>
       </FadeIn>
 
-      <div className="mt-2.5">
+      <div className="mt-2.5 lg:mt-[7px]">
         <Paragraph paragraphType={EParagraphVariant.Tertiary} isCenter>
           <FadeIn delay={1.2}>
             Желаешь продать машину быстро, но не хочешь заниматься этим
             самостоятельно?
           </FadeIn>
 
-          <br />
+          <br className="lg:hidden" />
 
           <FadeIn delay={1.6}>
             Доверь нам все проблемы, связанные с продажей машины!

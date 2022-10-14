@@ -9,15 +9,15 @@ import {
   Paragraph,
 } from '@test-work/ui-kit';
 
-import { Watch } from './svgs/watch';
-import { Euro } from './svgs/euro';
-import { Success } from './svgs/success';
+import { Watch } from '../svgs/watch';
+import { Euro } from '../svgs/euro';
+import { Success } from '../svgs/success';
 
-export const Slider: FC = () => {
+export const DesktopSlider: FC = () => {
   return (
-    <Parallax speed={-3} className="flex mt-5 items-center">
-      <FadeIn delay={0.8} className="-z-50">
-        <div className="w-[140px] h-[233px] bg-[#E4E4E44D] rounded-[10px] shadow-[0_0_4px_rgba(0,0,0,0.25)] border-[#BFD093] border-[1px] -z-50 -mr-[45px]">
+    <Parallax speed={-4} className="mt-5 items-center hidden lg:flex -ml-12">
+      <FadeIn delay={2.4} className="-z-50">
+        <div className="w-[183px] h-[233px] bg-[#FEFEFE] rounded-[10px_0px_0px_10px] shadow-[0_0_4px_rgba(0,0,0,0.25)] border-[#BFD093] border-[1px] -z-50 -mr-0.5">
           <div className="py-[41px] px-[10px] flex flex-col gap-5 items-center opacity-75">
             <Watch />
             <Headline level={1}>Быстро</Headline>
@@ -29,8 +29,8 @@ export const Slider: FC = () => {
           </div>
         </div>
       </FadeIn>
-      <FadeIn delay={3}>
-        <div className="w-[183px] h-[273px] bg-white rounded-[10px] shadow-[0_0_4px_rgba(0,0,0,0.25)] border-[#9CC634] border-[1px]">
+      <FadeIn delay={0.8}>
+        <div className="w-[183px] h-[273px] bg-[#FEFFFB] rounded-[10px] shadow-[0_0_4px_rgba(0,0,0,0.25)] border-[#9CC634] border-[1px]">
           <div className="pb-[41px] pt-[30px] pl-[9px] pr-2 flex flex-col items-center">
             <Success />
             <div className="pt-[23px] pb-[7px]">
@@ -48,8 +48,8 @@ export const Slider: FC = () => {
           </div>
         </div>
       </FadeIn>
-      <FadeIn delay={2.4} className="-z-50">
-        <div className="w-[140px] h-[233px] bg-[#E4E4E44D] rounded-[10px] shadow-[0_0_4px_rgba(0,0,0,0.25)] border-[#BFD093] border-[1px] -z-50 -ml-[45px]">
+      <FadeIn delay={3.2} className="-z-50">
+        <div className="w-[183px] h-[233px] bg-[#FEFEFE] rounded-[0px_10px_10px_0px] shadow-[0_0_4px_rgba(0,0,0,0.25)] border-[#BFD093] border-[1px] -z-50 -ml-0.5">
           <div className="py-[41px] px-[10px] flex flex-col gap-5 items-center opacity-75">
             <Euro />
             <Headline level={1}>Прибыльно</Headline>
