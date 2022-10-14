@@ -15,7 +15,7 @@ import { Features } from './features';
 
 export const Company: FC = () => {
   return (
-    <section className="mt-[50px] pb-20">
+    <section className="mt-[50px] pb-20 lg:mt-[244px]">
       <div className="flex flex-col gap-5">
         <FadeIn delay={0.8}>
           <TextUnderline place={EPlace.Company}>COMPANY NAME</TextUnderline>
