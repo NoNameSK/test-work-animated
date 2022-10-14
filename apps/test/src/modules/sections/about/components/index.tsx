@@ -11,7 +11,6 @@ import {
   TextUnderline,
 } from '@test-work/ui-kit';
 
-import { aboutItems } from '../data/about-items';
 import { Items } from './items';
 
 export const About: FC = () => {
@@ -54,9 +53,9 @@ export const About: FC = () => {
           </div>
         </Parallax>
       </FadeIn>
-      <FadeIn delay={1.6} className="hidden lg:block  -z-50">
+      <FadeIn delay={1.6} className="hidden lg:block -z-50">
         <Parallax speed={-3} className="-z-50">
-          <div className=" -z-50">
+          <div className="-z-50">
             <img
               src="./assets/images/Illustration-big.jpg"
               alt="Два человека смотрят в ноутбук и на заднем фоне белая машина"

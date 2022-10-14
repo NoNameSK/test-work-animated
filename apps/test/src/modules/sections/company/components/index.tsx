@@ -11,12 +11,13 @@ import {
 } from '@test-work/ui-kit';
 
 import { companyItems } from '../data/company-items';
+
 import { Features } from './features';
 
 export const Company: FC = () => {
   return (
-    <section className="mt-[50px] pb-20 lg:mt-[244px]">
-      <div className="flex flex-col gap-5">
+    <section className="mt-[50px] pb-20 lg:mt-[244px] lg:flex">
+      <div className="flex flex-col gap-5 lg:max-w-[45%]">
         <FadeIn delay={0.8}>
           <TextUnderline place={EPlace.Company}>COMPANY NAME</TextUnderline>
         </FadeIn>
@@ -34,7 +35,7 @@ export const Company: FC = () => {
         </FadeIn>
 
         <Parallax speed={-3}>
-          <div className="flex gap-5">
+          <div className="flex gap-5 lg:mt-12 lg:gap-[41px]">
             {companyItems.map((item, index) => (
               <FadeIn delay={1.4 + index / 2} key={index}>
                 <div className="shadow-[0_4px_4px_#E5E5E5] w-[111px] h-[111px] rounder-[10px]">

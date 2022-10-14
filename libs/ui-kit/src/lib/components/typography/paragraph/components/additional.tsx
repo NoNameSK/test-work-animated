@@ -1,4 +1,5 @@
 import { FC } from 'react';
+
 import { ITypographyProps } from '../../typography-props';
 
 export const Additional: FC<ITypographyProps> = ({

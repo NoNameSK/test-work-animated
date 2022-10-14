@@ -1,5 +1,7 @@
 import { FC, ReactNode, useEffect, useState } from 'react';
+
 import { aboutItems } from '../data/about-items';
+
 import { FadeIn, Headline } from '@test-work/ui-kit';
 
 interface IComponentProps {
