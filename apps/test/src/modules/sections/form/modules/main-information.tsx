@@ -1,5 +1,13 @@
-import { Button, EButtonSize, Headline, InputControl } from '@test-work/ui-kit';
 import { FC } from 'react';
+
+import {
+  Button,
+  EButtonSize,
+  EInputType,
+  Headline,
+  Input,
+  InputControl,
+} from '@test-work/ui-kit';
 
 export const MainInformation: FC = () => {
   return (
@@ -8,15 +16,15 @@ export const MainInformation: FC = () => {
         Данные автомобиля
       </Headline>
       <div className="grid grid-cols-3 gap-6 lg:grid-cols-4 lg:gap-row-[30px] lg:gap-col-[10px]">
-        <InputControl label="Марка" />
-        <InputControl label="Модель" />
-        <InputControl label="Мотор" />
-        <InputControl label="Год" />
-        <InputControl label="Топливо" />
-        <InputControl label="КПП" />
-        <InputControl label="Пробег" />
-        <InputControl label="Техосмотр" />
-        <InputControl label="Желаемая цена" />
+        <Input labelText="Марка" type={EInputType.Text} />
+        <Input labelText="Модель" type={EInputType.Text} />
+        <Input labelText="Мотор" type={EInputType.Text} />
+        <Input labelText="Год" type={EInputType.Number} />
+        <Input labelText="Топливо" type={EInputType.Text} />
+        <Input labelText="КПП" type={EInputType.Text} />
+        <Input labelText="Пробег" type={EInputType.Number} />
+        <Input labelText="Техосмотр" type={EInputType.Text} />
+        <Input labelText="Желаемая цена" type={EInputType.Number} required />
         <Button size={EButtonSize.Large} className="col-span-3">
           Добавить фото
         </Button>

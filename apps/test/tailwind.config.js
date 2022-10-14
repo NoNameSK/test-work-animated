@@ -24,6 +24,7 @@ module.exports = {
         green: '#A6C34F',
         navigation: '#072446',
         footerIcons: '#9CC634',
+        checkBox: 'rgba(156, 198, 52, 1)',
         white: '#FFFFFF',
       },
       animation: {
@@ -34,20 +35,36 @@ module.exports = {
       },
       keyframes: {
         openMenuX: {
-          '0%': { right: '-372px' },
-          '100%': { right: '0px' },
+          '0%': {
+            right: '-372px',
+          },
+          '100%': {
+            right: '0px',
+          },
         },
         closeMenuX: {
-          '0%': { right: '0px' },
-          '100%': { right: '-372px' },
+          '0%': {
+            right: '0px',
+          },
+          '100%': {
+            right: '-372px',
+          },
         },
         openMenuY: {
-          '0%': { height: '0%' },
-          '100%': { height: '100%' },
+          '0%': {
+            height: '0%',
+          },
+          '100%': {
+            height: '100%',
+          },
         },
         closeMenuY: {
-          '0%': { height: '100%' },
-          '100%': { height: '0%' },
+          '0%': {
+            height: '100%',
+          },
+          '100%': {
+            height: '0%',
+          },
         },
       },
     },

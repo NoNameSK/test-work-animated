@@ -24,7 +24,9 @@ export const Button: FC<IComponentProps> = ({
 }) => {
   return (
     <button
-      className={`${size === EButtonSize.Large ? 'w-full' : 'w-[190px]'} ${
+      className={`${
+        size === EButtonSize.Large ? 'w-full' : 'w-[190px] lg:h-[22px] '
+      } ${
         center ? 'mx-auto' : ''
       } bg-[#A6C34F] border-[1px] rounded-[5px] border-[#A6C34F] h-[30px] flex items-center justify-center ${className}`}
     >

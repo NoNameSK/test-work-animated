@@ -9,8 +9,8 @@ export const Secondary: FC<ITypographyProps> = ({
 }) => (
   <p
     className={`font-roboto text-[10px] leading-[12px] ${
-      isNormal ? 'font-normal' : 'font-bold'
-    } ${color ? `text-${color}` : 'text-text'} ${
+      color ? `text-${color}` : 'text-text'
+    } ${isNormal ? 'font-normal' : 'font-bold'} ${
       isCenter ? 'text-center' : ''
     }`}
     {...props}

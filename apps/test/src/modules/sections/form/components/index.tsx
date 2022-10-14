@@ -23,12 +23,12 @@ export const Form: FC = () => {
       <FadeIn delay={1.6}>
         <Parallax
           speed={-5}
-          className="h-[346px] -mr-[40px] lg:w-[444px] lg:h-[356px] lg:absolute lg:-ml-[26.25rem] lg:-z-50"
+          className="h-[346px] -mr-[40px] lg:w-[444px] lg:h-[356px] lg:absolute lg:-ml-[368px] lg:-z-50"
         >
           <img
             src="./assets/images/city-big.jpg"
             alt="Два человека и город на заднем фоне"
-            className="mt-5 absolute -ml-5 lg:w-[444px] lg:h-[356px] lg:-ml-[0.25rem] lg:mt-[57px]"
+            className="mt-5 absolute -ml-5 lg:w-[444px] lg:h-[356px] lg:ml-0 lg:mt-[57px]"
           />
         </Parallax>
       </FadeIn>
